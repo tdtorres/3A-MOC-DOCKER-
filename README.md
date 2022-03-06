@@ -25,7 +25,8 @@ cd /var/lib/mysql/import
  
 * Exécuter la commande :
 ```mysql -u root -proot```
-* puis 
+
+* puis :
 ```
 CREATE DATABASE bibliotheque;
 ```
