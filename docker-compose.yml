@@ -1,0 +1,26 @@
+services:
+    web:
+       image: majestyk/3moc_dockerize:web
+       environment:
+         - ALLOW_OVERRIDE=true
+       ports:
+         - "80:80"
+       links:
+         - db
+       volumes:
+         - ./app:/var/www/html/
+
+
+    db:
+      image: majestyk/3moc_dockerize:bd
+      restart: always
+      volumes:
+        - ./mysql:/var/lib/mysql
+        - ./import:/var/lib/mysql/import
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: test
+        MYSQL_DATABASE: database
+      ports:
+        - "8889:3306"
