@@ -32,7 +32,7 @@ mysql -u root -proot
 ```
 CREATE DATABASE bibliotheque;
 ```
-* Sortir de MariaDB en pressant la touche CTRL et C en simultanée.
+* Sortir de MariaDB en pressant la touche **CTRL** et **C** en simultanée.
 * Exécuter la commande :
 ```
 mysql -u root -proot bibliotheque < import.sql
