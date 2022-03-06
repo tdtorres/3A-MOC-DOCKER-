@@ -18,7 +18,7 @@ Sujet #2 : Application web
 Dans le conteneur MariaBD (image majestyk/bd), la base de données n'est pas installée par defaut. 
 
 Pour l'installer, il faut : 
-* se déplacer dans le répertoire /var/lib/mysql/import
+* se déplacer dans le répertoire
 ```
 cd /var/lib/mysql/import
 ```
