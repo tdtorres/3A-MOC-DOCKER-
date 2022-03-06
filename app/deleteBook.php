@@ -4,8 +4,8 @@ $mysqlClient = new PDO(
     'root',
     ''
 );
-$request = 'INSERT INTO user (idUser, login, mdp) VALUES (null,?,?)';
+$request = 'DELETE FROM contains where idUserLibrary=? AND ISBN=?';
 $resp = $mysqlClient->prepare($request);
-$resp->execute([$_POST['login'],$_POST['password']]);
+$resp->execute([$_POST['library'], $_POST['book']]);
 header('Location: ./');
 exit();
