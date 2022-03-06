@@ -24,7 +24,9 @@ cd /var/lib/mysql/import
 ```
  
 * Exécuter la commande :
-```mysql -u root -proot```
+```
+mysql -u root -proot
+```
 
 * puis :
 ```
